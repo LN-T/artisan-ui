@@ -40,5 +40,29 @@ return [
     |
     */
 
-    'middleware' => ['web', AuthorizeArtisanUI::class],
+    'middleware' => [
+        'web',
+        AuthorizeArtisanUI::class
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Artisan UI Filters
+    |--------------------------------------------------------------------------
+    |
+    */
+    'filters' => [
+        'namespaces' => [
+            'included' => [
+            ],
+            'excluded' => [
+            ],
+        ],
+        'commands' => [
+            'included' => [
+            ],
+            'excluded' => [
+            ],
+        ],
+    ],
 ];
